@@ -1,0 +1,154 @@
+html {
+	background-image: url('galaxy.jpg');
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	width:1000px;
+	border: 8px solid rgb(11,10,142);
+	margin-left:auto;
+	margin-right:auto;
+    background-image: url('body.jpg');
+}
+
+nav {
+	background:#333333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+	color: #ffffff;
+}
+
+nav a {
+	font-weight: bold;
+	color:#ffffff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+	background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(22,33,101,1) 100%);
+	color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+	height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}
+
+/* Add padding to containers */
+.container{
+    padding: 16px;
+    background-color: rgba(97, 91, 125,0.4);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=date], input[type=number]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=date]:focus, input[type=number]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn{
+    background-color: #1f098f;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover{
+    opacity: 1;
+}
+
+.deletebtn{
+    background-color: #a82020;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.deletebtn:hover{
+    opacity: 1;
+}
+
+#booklist {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#booklist td, #booklist th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#booklist tr:nth-child(even){background-color: #f2f2f2;}
+
+#booklist tr:hover {background-color: #ddd;}
+
+#booklist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1f098f;
+  color: white;
+}
+
+#authorlist {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#authorlist td, #authorlist th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#authorlist tr:nth-child(even){background-color: #f2f2f2;}
+
+#authorlist tr:hover {background-color: #ddd;}
+
+#authorlist th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1f098f;
+  color: white;
+}

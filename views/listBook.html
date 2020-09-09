@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+                <li><a href="/newAuthor">Add New Author</a></li>
+				<li><a href="/listAuthor">Authors List</a></li>
+				<li><a href="/newBook">Add New Book</a></li>
+                <li><a href="/deleteBookISBN">Delete Book</a></li>
+                <li><a href="/updateAuthorNumBooks">Update Author's Book Number</a></li>
+			</ul>
+			
+		</nav>
+        
+        <table id="booklist">
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Date of Publication</th>
+                <th>Summary</th>
+            </tr>
+            <% for(let i = 0; i < books.length; i++) { %>
+                <tr>
+                    <td> <%= books[i].title %> </td>
+                    <td> <%= books[i].author.name.firstName + " " + books[i].author.name.lastName %> </td>
+                    <td> <%= books[i].isbn %> </td>
+                    <td> <%= new Date(books[i].dop).toLocaleDateString() %> </td>
+                    <td> <%= books[i].summary %> </td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>

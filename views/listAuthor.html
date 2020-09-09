@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+                <li><a href="/newAuthor">Add New Author</a></li>
+				<li><a href="/newBook">Add New Book</a></li>
+				<li><a href="/listBook">Books List</a></li>
+                <li><a href="/deleteBookISBN">Delete Book</a></li>
+                <li><a href="/updateAuthorNumBooks">Update Author's Book Number</a></li>
+			</ul>
+			
+		</nav>
+        
+        <table id="authorlist">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>Number of Books</th>
+            </tr>
+            <% for(let i = 0; i < authors.length; i++) { %>
+                <tr>
+                    <td> <%= authors[i]._id %> </td>
+                    <td> <%= authors[i].name.firstName + " " + authors[i].name.lastName %> </td>
+                    <td> <%= new Date(authors[i].dob).toLocaleDateString() %> </td>
+                    <td> <%= authors[i].address.unit + "/" + authors[i].address.street + " " + authors[i].address.suburb + " " + authors[i].address.state %> </td>
+                    <td> <%= authors[i].numBooks %> </td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>

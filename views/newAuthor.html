@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/listAuthor">Authors List</a></li>
+				<li><a href="/newBook">Add New Book</a></li>
+				<li><a href="/listBook">Books List</a></li>
+                <li><a href="/deleteBookISBN">Delete Book</a></li>
+                <li><a href="/updateAuthorNumBooks">Update Author's Book Number</a></li>
+			</ul>
+			
+		</nav>
+        
+        <form method="POST" action="/authorForm">
+            <div class = "container">
+                <h2>Add New Author</h2>
+                <p>Please fill in this form to add a new author.</p>
+
+                <hr>
+                <h3>Name</h3>
+                <label for="firstnameinput"><b>First Name:</b></label>
+                <input required type="text" placeHolder="Please Enter the Author's First Name" id="firstnameinput" name="firstName">
+
+                <label for="lastnameinput"><b>Last Name:</b></label>
+                <input type="text" placeHolder="Please Enter the Author's Last Name" id="lastnameinput" name="lastName">
+                <hr>
+                
+                <label for="dobinput"><b>Date of Birth:</b></label>
+                <input required type="date" placeHolder="dd/mm/yyyy" id="dobinput" name="dob">
+                
+                <hr>
+                <h3>Address</h3>
+                <label for="stateinput"><b>State:</b></label>
+                <input required type="text" placeHolder="Please Enter the Address State" id="stateinput" name="state">
+                
+                <label for="suburbinput"><b>Suburb:</b></label>
+                <input required type="text" placeHolder="Please Enter the Address Suburb" id="suburbinput" name="suburb">
+                
+                <label for="streetinput"><b>Street:</b></label>
+                <input required type="text" placeHolder="Please Enter the Address Street" id="streetinput" name="street">
+                
+                <label for="unitinput"><b>Unit:</b></label>
+                <input required type="number" placeHolder="Please Enter the Address Unit" id="unitinput" name="unit">
+                <hr>
+                
+                <label for="numbooksinput"><b>Number of Books:</b></label>
+                <input required type="number" placeHolder="Please Enter the Number of Books" id="numbooksinput" name="numBooks">
+                <hr>
+
+                <button type="submit" class="registerbtn">Add Author</button>
+            </div>
+        </form>
+    </body>
+</html>

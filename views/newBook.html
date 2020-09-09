@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/newAuthor">Add New Author</a></li>
+				<li><a href="/listAuthor">Authors List</a></li>
+				<li><a href="/listBook">Books List</a></li>
+                <li><a href="/deleteBookISBN">Delete Book</a></li>
+                <li><a href="/updateAuthorNumBooks">Update Author's Book Number</a></li>
+			</ul>
+			
+		</nav>
+        
+        <form method="POST" action="/bookForm">
+            <div class = "container">
+                <h2>Add New Book</h2>
+                <p>Please fill in this form to add a new book.</p>
+
+                <hr>
+                <label for="booktitleinput"><b>Book Title:</b></label>
+                <input required type="text" placeHolder="Please Enter the Book's Title" id="booktitleinput" name="title">
+
+                <label for="authorinput"><b>Author:</b></label>
+                <input required type="text" placeHolder="Please Enter the Author" id="authorinput" name="author">
+                
+                <label for="isbninput"><b>ISBN:</b></label>
+                <input required type="text" placeHolder="Please Enter the ISBN" id="isbninput" name="isbn">
+                
+                <label for="publicationdateinput"><b>Date of Publication:</b></label>
+                <input type="date" placeHolder="dd/mm/yyyy" id="publicationdateinput" name="dop">
+
+                <label for="summaryinput"><b>Summary:</b></label>
+                <input required type="text" placeHolder="Please Enter the Book's Summary" id="summaryinput" name="summary">
+                <hr>
+
+                <button type="submit" class="registerbtn">Add Book</button>
+            </div>
+        </form>
+    </body>
+</html>

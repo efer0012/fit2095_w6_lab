@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+                <li><a href="/newAuthor">Add New Author</a></li>
+				<li><a href="/listAuthor">Authors List</a></li>
+				<li><a href="/newBook">Add New Book</a></li>
+				<li><a href="/listBook">Books List</a></li>
+                <li><a href="/deleteBookISBN">Delete Book</a></li>
+			</ul>
+			
+		</nav>
+        
+        <form method="POST" action="/updateForm">
+            <div class = "container">
+                <h2>Update Author Number of Books</h2>
+                <p>Please fill in this form to update the author's number of books.</p>
+  
+                <hr>
+                
+                <label for="authoridinput"><b>Author ID:</b></label>
+                <input required type="text" placeHolder="Please Enter the Author's ID" id="authoridinput" name="authorID">
+                
+                <hr>
+                
+                <label for="numbooksinput"><b>Number of Books:</b></label>
+                <input required type="number" placeHolder="Please Enter the Number of Books" id="numbooksinput" name="numBooks">
+                
+                <hr>
+
+                <button type="submit" class="registerbtn">Update Number of Books</button>
+            </div>
+        </form>
+    </body>
+</html>

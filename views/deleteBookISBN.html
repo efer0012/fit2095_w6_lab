@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <img src="http://salehriaz.com/404Page/img/rocket.svg" width="60px">
+            <h1>Welcome to Space Library</h1>
+        </header>
+        
+        <nav>
+		
+			<ul>
+				<li><a href="/">Home</a></li>
+                <li><a href="/newAuthor">Add New Author</a></li>
+				<li><a href="/listAuthor">Authors List</a></li>
+				<li><a href="/newBook">Add New Book</a></li>
+				<li><a href="/listBook">Books List</a></li>
+                <li><a href="/updateAuthorNumBooks">Update Author's Book Number</a></li>
+			</ul>
+			
+		</nav>
+        
+        <form method="POST" action="/deleteForm">
+            <div class = "container">
+                <h2>Delete Book</h2>
+                <p>Please provide the book's ISBN.</p>
+
+                <hr>
+                <label for="isbninput"><b>ISBN:</b></label>
+                <input required type="text" placeHolder="Please Enter the Book's ISBN" id="isbninput" name="isbn">
+                <hr>
+
+                <button type="submit" class="deletebtn">Delete Book</button>
+            </div>
+        </form>
+    </body>
+</html>
